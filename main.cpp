@@ -1,5 +1,4 @@
 #include <iostream>
-#include <stdio.h>
 
 #include "check_move.h"
 #include "ant_path.h"

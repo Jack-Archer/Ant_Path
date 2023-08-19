@@ -1,9 +1,5 @@
 cmake_minimum_required(VERSION 3.10)
 
-SET(CMAKE_CXX_COMPILER "C:/dev/mingw64/bin/g++.exe")
-SET(CMAKE_C_COMPILER "C:/dev/mingw64/bin/gcc.exe")
-SET(CMAKE_CXX_STANDARD 17)
-
 project(AntPath)
 
 if (NOT (DEFINED EXECUTABLE_OUTPUT_PATH) OR (EXECUTABLE_OUTPUT_PATH STREQUAL ""))
