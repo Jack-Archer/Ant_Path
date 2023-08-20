@@ -10,6 +10,7 @@
 
    AntPath::AntPath(Coordinates& now) : all_cells_() {
         all_cells_.insert(now);
+        std::cout << "Starting position is : " << now.x << " , " << now.y << std::endl;
     }
 
    void  AntPath::Print() {
@@ -36,7 +37,7 @@
             MoveLeft(for_check, to_explore);
             MoveRight(for_check, to_explore);
         }
-        std::cout << count_cells_ << std::endl;
+        std::cout << "Total available cells : "<< count_cells_ << std::endl;
     }
 
     void AntPath::MoveUp(Coordinates for_check, std::queue<Coordinates> &to_explore){

@@ -9,7 +9,7 @@ endif ()
 
 add_definitions("-Wall -Wsign-conversion -Wextra -Weffc++")
 
-SET( cpps
+SET( impl
     main.cpp
     ant_path.cpp
     check_move.cpp
@@ -22,4 +22,4 @@ INCLUDE_DIRECTORIES(
 
 
 # add the executable
-add_executable(AntPath.exe ${cpps})
+add_executable(AntPath ${impl})
